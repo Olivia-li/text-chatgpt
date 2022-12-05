@@ -1,5 +1,7 @@
 # chatGPT Text interface
 This is a wrapper around chatGPT so that you can access the platform via text message. 
+<br><br>
+<img src="https://user-images.githubusercontent.com/9896624/205771062-1dfbf421-9871-46f3-9226-aa378b555ef6.jpg" alt="drawing" width="500px"/>
 ## Setup
 This app requires both a Twilio account and an OpenAI account for this to work. All credentials are stored in a `.env` file. 
 <br>
