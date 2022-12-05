@@ -14,16 +14,17 @@ This app requires both a Twilio account and an OpenAI account for this to work. 
 4. Copy the value for `__Secret-nextauth.session-token` and paste it to the `.env` file that you have just created under `SESSION_TOKEN`.
 <img width="952" alt="image" src="https://user-images.githubusercontent.com/9896624/205768416-9ffb0d37-134d-4022-b0ea-380299b1a13c.png">
 <br><br>
+
 ## Twilio SID and Secret Token
-1) Go to https://www.twilio.com/ and make a Twilio account.
-2) Go to your twilio console and you'll see your Twilio SID and secret token.
-3) Copy and paste them in your `.env` file as `TWILIO_SID` and `TWILIO_TOKEN` accordingly. 
+1. Go to https://www.twilio.com/ and make a Twilio account.
+2. Go to your twilio console and you'll see your Twilio SID and secret token.
+3. Copy and paste them in your `.env` file as `TWILIO_SID` and `TWILIO_TOKEN` accordingly. 
 <br><br>
 
 ## Configure a number to your app 
 Once your app is publically hosted, you need to buy a Twilio phone number add your url to your Twilio SMS response webhook. 
-1) Buy a Twilio phone number
-2) In the phone number settings add your webhook urls. The response webhook should be in the format `https://example.com/sms` and the failure webhook is in the format `https://example.com/timeout`
+1. Buy a Twilio phone number
+2. In the phone number settings add your webhook urls. The response webhook should be in the format `https://example.com/sms` and the failure webhook is in the format `https://example.com/timeout`
 <img width="1234" alt="image" src="https://user-images.githubusercontent.com/9896624/205769800-d57d97f0-9713-47a2-b0e3-4df9b65930b9.png">
 
 --- 
