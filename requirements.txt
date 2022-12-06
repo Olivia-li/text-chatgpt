@@ -19,5 +19,6 @@ soupsieve==2.3.2.post1
 tls-client==0.1.5
 twilio==7.15.4
 urllib3==1.26.13
+waitress==2.1.2
 Werkzeug==2.2.2
 zipp==3.11.0
