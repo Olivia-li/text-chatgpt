@@ -27,7 +27,7 @@ def getChatResponse(prompt, number, twilio_number):
   message = chatbot.get_chat_response(prompt)
   client.messages.create(to=number,
                          from_=twilio_number,
-                         body=message['message'])
+                         body=message['message'][:1600])
   return(None)
 
 
