@@ -21,13 +21,18 @@ config = {
 
 
 def getChatResponse(prompt, number, twilio_number):
-  chatbot = Chatbot(config, conversation_id=None)
-  chatbot.reset_chat()
-  chatbot.refresh_session()
-  message = chatbot.get_chat_response(prompt)
-  client.messages.create(to=number,
+  try: 
+    chatbot = Chatbot(config, conversation_id=None)
+    chatbot.reset_chat()
+    chatbot.refresh_session()
+    message = chatbot.get_chat_response(prompt)
+    client.messages.create(to=number,
                          from_=twilio_number,
                          body=message['message'][:1600])
+  except:
+    client.messages.create(to=number,
+                         from_=twilio_number,
+                         body="We're at capacity. Sorry the request could not be processed.")
   return(None)
 
 
