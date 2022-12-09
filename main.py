@@ -15,8 +15,8 @@ app = Flask(__name__)
 client = Client(os.environ['TWILIO_SID'], os.environ['TWILIO_TOKEN'])
 
 config = {
-  "Authorization": "<Your Bearer Token Here>",
-  "session_token": os.environ['SESSION_TOKEN']
+    "email": os.environ["OPENAI_EMAIL"],
+    "password": os.environ["OPENAI_PASSWORD"],
 }
 
 
